@@ -75,7 +75,7 @@
     }
 }
 
-/* Standard - unter 1920px */
+/* BILD - responsiv */
 @media screen and (max-width: 1920px) {
 	body, #app-mount {
 		background-size: 95% auto !important;
@@ -84,7 +84,6 @@
 	}
 }
 
-/* 2560x1440 - wie davor */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
 	body, #app-mount {
 		background-size: 95% auto !important;
@@ -93,7 +92,6 @@
 	}
 }
 
-/* 3440x1440 Ultrawide - kein Rand, füllt alles */
 @media screen and (min-width: 2561px) {
 	body, #app-mount {
 		background-size: cover !important;
@@ -102,7 +100,7 @@
 	}
 }
 
-/* TEXTAREA - translucent wiederherstellen */
+/* TEXTAREA - translucent */
 [class*="channelTextArea"] {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha)) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
@@ -110,4 +108,46 @@
 
 [class*="channelTextArea"]:focus-within {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
+}
+
+/* PROFILKARTE rechts - translucent */
+[class*="userProfileOuter"],
+[class*="userPanel"],
+[class*="profilePanel"],
+[class*="memberSidebar"] {
+	background-color: hsl(0,0%,0%,0.3) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* POPOUTS - translucent */
+[class*="popout-"],
+[class*="userPopout"] {
+	background-color: hsl(0,0%,0%,0.5) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* EMBEDS - translucent */
+[class*="embed-"],
+[class*="embedWrapper"] {
+	background-color: hsl(0,0%,0%,0.3) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* MODALS - translucent */
+[class*="modal-"],
+[class*="modalContent"] {
+	background-color: hsl(0,0%,0%,0.5) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* TOOLTIPS - translucent */
+[class*="tooltip-"] {
+	background-color: hsl(0,0%,0%,0.6) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* CONTEXT MENU - translucent */
+[class*="menu-"] {
+	background-color: hsl(0,0%,0%,0.5) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
 }
