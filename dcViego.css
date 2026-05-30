@@ -77,7 +77,7 @@
 
 /* BILD ZOOM - weiter rauszoomen damit es scharf bleibt */
 body, #app-mount {
-	background-size: 75% auto !important;
+	background-size: 60% auto !important;
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
 }
