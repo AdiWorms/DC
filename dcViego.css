@@ -14,7 +14,7 @@
 
 :root {
 	/* APP ELEMENTS */
-	--app-bg: url("file:///C:/Users/tarka/OneDrive/Desktop/ViegoWP.jpg");
+	--app-bg: url("https://raw.githubusercontent.com/AdiWorms/DC/main/ViegoWP.jpg");
 	--app-blur: 6px;
 	--app-margin: 24px;
 	--app-radius: 8px;
