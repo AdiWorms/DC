@@ -16,12 +16,12 @@
 	--app-blur: 6px;
 	--app-margin: 24px;
 	--app-radius: 8px;
-	/* ACCENT HSL AND TEXT COLOR SETTINGS - Eisblau aus dem Bild */
-	--accent-hue: 210;
-	--accent-saturation: 55%;
-	--accent-lightness: 68%;
+	/* ACCENT - #5e63f7 = hsl(238, 89%, 67%) */
+	--accent-hue: 238;
+	--accent-saturation: 89%;
+	--accent-lightness: 67%;
 	--accent-opacity: 1;
-	--accent-text-color: hsl(0,0%,0%);
+	--accent-text-color: hsl(0,0%,100%);
 	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
 	--sidebar-color: hsl(0,0%,0%,0.4);
 	--main-content-color: hsl(0,0%,0%,0.2);
@@ -30,10 +30,10 @@
 	--message-radius: 8px;
 	--message-padding-top: 8px;
 	--message-padding-side: 8px;
-	/* REPLY HSL COLOR SETTINGS - auch Eisblau */
-	--reply-hue: 210;
-	--reply-saturation: 55%;
-	--reply-lightness: 68%;
+	/* REPLY HSL COLOR SETTINGS */
+	--reply-hue: 238;
+	--reply-saturation: 89%;
+	--reply-lightness: 67%;
 	--reply-opacity: 1;
 	/* TEXTAREA SETTINGS */
 	--textarea-color: 255,255,255;
@@ -48,7 +48,7 @@
 	/* BUTTON SETTINGS */
 	--button-height: 32px;
 	--button-padding: 0 16px;
-	--button-action-color: hsl(0,0%,0%);
+	--button-action-color: hsl(0,0%,100%);
 	--button-radius: 16px;
 }
 @supports (color:color-mix(in lch,red,blue)) {
@@ -75,9 +75,9 @@
     }
 }
 
-/* BILD ZOOM - weiter rauszoomen damit es scharf bleibt */
+/* BILD - leicht rangezoomt */
 body, #app-mount {
-	background-size: 60% auto !important;
+	background-size: 110% auto !important;
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
 }
