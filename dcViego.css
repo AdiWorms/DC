@@ -135,9 +135,27 @@
 
 /* MODALS - translucent */
 [class*="modal-"],
-[class*="modalContent"] {
-	background-color: hsl(0,0%,0%,0.5) !important;
+[class*="modalContent"],
+[class*="layerContainer"] [class*="root-"],
+[class*="userProfileModal"],
+[class*="userProfileModalInner"],
+[class*="modalLayer"] > [class*="root-"] {
+	background-color: hsl(0,0%,0%,0.45) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+/* PROFIL MODAL INNERE BEREICHE */
+[class*="userProfileModal"] [class*="body-"],
+[class*="userProfileModal"] [class*="tabBar"],
+[class*="userProfileModal"] [class*="section-"] {
+	background-color: transparent !important;
+}
+
+/* WIDGET KARTEN im Profil */
+[class*="userProfileModal"] [class*="card-"],
+[class*="userProfileModal"] [class*="listItem-"] {
+	background-color: hsl(0,0%,100%,0.05) !important;
+	backdrop-filter: blur(4px) !important;
 }
 
 /* TOOLTIPS - translucent */
