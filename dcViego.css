@@ -75,32 +75,30 @@
     }
 }
 
-/* BILD - responsiv für alle Auflösungen inkl. 3440x1440 Ultrawide */
-body, #app-mount {
-	background-size: 95% auto !important;
-	background-position: center center !important;
-	background-repeat: no-repeat !important;
-}
-
-/* Normaler Monitor (1920x1080 und kleiner) */
+/* Standard - unter 1920px */
 @media screen and (max-width: 1920px) {
 	body, #app-mount {
 		background-size: 95% auto !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
 	}
 }
 
-/* Großer Monitor (2560x1440) */
+/* 2560x1440 */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
 	body, #app-mount {
 		background-size: 80% auto !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
 	}
 }
 
-/* Ultrawide 3440x1440 */
+/* 3440x1440 Ultrawide */
 @media screen and (min-width: 2561px) {
 	body, #app-mount {
-		background-size: 65% auto !important;
+		background-size: 60% auto !important;
 		background-position: center center !important;
+		background-repeat: no-repeat !important;
 	}
 }
 
