@@ -133,39 +133,36 @@
 	backdrop-filter: blur(var(--app-blur)) !important;
 }
 
-/* MODALS - translucent */
-[class*="modal-"],
-[class*="modalContent"],
-[class*="layerContainer"] [class*="root-"],
-[class*="userProfileModal"],
-[class*="userProfileModalInner"],
-[class*="modalLayer"] > [class*="root-"] {
+/* PROFIL MODAL - exakte Klassen aus DevTools */
+[class*="root_"],
+[class*="outer_"],
+[class*="profileContentOuter_"],
+[class*="layoutContainer_"] {
 	background-color: hsl(0,0%,0%,0.45) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
 }
 
-/* PROFIL MODAL INNERE BEREICHE */
-[class*="userProfileModal"] [class*="body-"],
-[class*="userProfileModal"] [class*="tabBar"],
-[class*="userProfileModal"] [class*="section-"] {
+[class*="profileContentOuter_"],
+[class*="profileContent_"],
+[class*="modal_"] {
 	background-color: transparent !important;
 }
 
 /* WIDGET KARTEN im Profil */
-[class*="userProfileModal"] [class*="card-"],
-[class*="userProfileModal"] [class*="listItem-"] {
+[class*="card_"],
+[class*="listItem_"] {
 	background-color: hsl(0,0%,100%,0.05) !important;
 	backdrop-filter: blur(4px) !important;
 }
 
 /* TOOLTIPS - translucent */
-[class*="tooltip-"] {
+[class*="tooltip_"] {
 	background-color: hsl(0,0%,0%,0.6) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
 }
 
 /* CONTEXT MENU - translucent */
-[class*="menu-"] {
+[class*="menu_"] {
 	background-color: hsl(0,0%,0%,0.5) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
 }
