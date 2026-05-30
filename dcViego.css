@@ -75,7 +75,7 @@
     }
 }
 
-/* BILD - responsiv */
+/* Standard - unter 1920px */
 @media screen and (max-width: 1920px) {
 	body, #app-mount {
 		background-size: 95% auto !important;
@@ -84,6 +84,7 @@
 	}
 }
 
+/* 2560x1440 - wie davor */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
 	body, #app-mount {
 		background-size: 95% auto !important;
@@ -92,6 +93,7 @@
 	}
 }
 
+/* 3440x1440 Ultrawide - kein Rand, füllt alles */
 @media screen and (min-width: 2561px) {
 	body, #app-mount {
 		background-size: cover !important;
@@ -100,7 +102,7 @@
 	}
 }
 
-/* TEXTAREA - translucent */
+/* TEXTAREA - translucent wiederherstellen */
 [class*="channelTextArea"] {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha)) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
@@ -108,61 +110,4 @@
 
 [class*="channelTextArea"]:focus-within {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
-}
-
-/* PROFILKARTE rechts - translucent */
-[class*="userProfileOuter"],
-[class*="userPanel"],
-[class*="profilePanel"],
-[class*="memberSidebar"] {
-	background-color: hsl(0,0%,0%,0.3) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
-}
-
-/* POPOUTS - translucent */
-[class*="popout-"],
-[class*="userPopout"] {
-	background-color: hsl(0,0%,0%,0.5) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
-}
-
-/* EMBEDS - translucent */
-[class*="embed-"],
-[class*="embedWrapper"] {
-	background-color: hsl(0,0%,0%,0.3) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
-}
-
-/* PROFIL MODAL - exakte Klassen aus DevTools */
-[class*="root_"],
-[class*="outer_"],
-[class*="profileContentOuter_"],
-[class*="layoutContainer_"] {
-	background-color: hsl(0,0%,0%,0.45) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
-}
-
-[class*="profileContentOuter_"],
-[class*="profileContent_"],
-[class*="modal_"] {
-	background-color: transparent !important;
-}
-
-/* WIDGET KARTEN im Profil */
-[class*="card_"],
-[class*="listItem_"] {
-	background-color: hsl(0,0%,100%,0.05) !important;
-	backdrop-filter: blur(4px) !important;
-}
-
-/* TOOLTIPS - translucent */
-[class*="tooltip_"] {
-	background-color: hsl(0,0%,0%,0.6) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
-}
-
-/* CONTEXT MENU - translucent */
-[class*="menu_"] {
-	background-color: hsl(0,0%,0%,0.5) !important;
-	backdrop-filter: blur(var(--app-blur)) !important;
 }
