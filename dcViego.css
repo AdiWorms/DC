@@ -81,3 +81,13 @@ body, #app-mount {
 	background-position: center center !important;
 	background-repeat: no-repeat !important;
 }
+
+/* TEXTAREA - translucent wiederherstellen */
+[class*="channelTextArea"] {
+	background-color: hsla(var(--textarea-color), var(--textarea-alpha)) !important;
+	backdrop-filter: blur(var(--app-blur)) !important;
+}
+
+[class*="channelTextArea"]:focus-within {
+	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
+}
