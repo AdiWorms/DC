@@ -111,3 +111,38 @@
 [class*="channelTextArea"]:focus-within {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
 }
+
+
+/* ICON CENTERING - alle Icons/Symbole mittig ausrichten */
+[class*="button"] > *,
+[class*="actionButton"] > *,
+[class*="toolbar"] [class*="button"],
+[class*="toolbar"] button,
+[class*="iconWrapper"],
+[class*="contents"],
+button[class*="button"] {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+/* Voice/Video Toolbar Buttons (wie im Bild) */
+[class*="anchor"],
+[class*="controlButton"],
+[class*="buttonContainer"] button,
+[class*="rtcConnectionStatus"],
+[class*="voiceCallWrapper"] button,
+[class*="bottomBarWrapper"] button,
+[class*="actionButtons"] button {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+/* SVG Icons direkt */
+[class*="button"] svg,
+[class*="actionButton"] svg,
+[class*="toolbar"] svg {
+	display: block !important;
+	margin: auto !important;
+}
