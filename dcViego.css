@@ -74,7 +74,6 @@
 		--background-modifier-selected: hsl(0,0%,100%,0.125);
     }
 }
-
 /* Standard - unter 1920px */
 @media screen and (max-width: 1920px) {
 	body, #app-mount {
@@ -83,7 +82,6 @@
 		background-repeat: no-repeat !important;
 	}
 }
-
 /* 2560x1440 - wie davor */
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
 	body, #app-mount {
@@ -92,7 +90,6 @@
 		background-repeat: no-repeat !important;
 	}
 }
-
 /* 3440x1440 Ultrawide - kein Rand, füllt alles */
 @media screen and (min-width: 2561px) {
 	body, #app-mount {
@@ -101,48 +98,31 @@
 		background-repeat: no-repeat !important;
 	}
 }
-
 /* TEXTAREA - translucent wiederherstellen */
 [class*="channelTextArea"] {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha)) !important;
 	backdrop-filter: blur(var(--app-blur)) !important;
 }
-
 [class*="channelTextArea"]:focus-within {
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
 }
 
-
-/* ICON CENTERING - alle Icons/Symbole mittig ausrichten */
-[class*="button"] > *,
-[class*="actionButton"] > *,
-[class*="toolbar"] [class*="button"],
-[class*="toolbar"] button,
-[class*="iconWrapper"],
-[class*="contents"],
-button[class*="button"] {
-	display: flex !important;
-	align-items: center !important;
-	justify-content: center !important;
-}
-
-/* Voice/Video Toolbar Buttons (wie im Bild) */
-[class*="anchor"],
+/* CALL BUTTONS - Icons zentrieren */
 [class*="controlButton"],
-[class*="buttonContainer"] button,
-[class*="rtcConnectionStatus"],
-[class*="voiceCallWrapper"] button,
-[class*="bottomBarWrapper"] button,
-[class*="actionButtons"] button {
+[class*="callContainer"] button,
+[class*="topSection"] button {
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
+	padding: 0 !important;
 }
 
-/* SVG Icons direkt */
-[class*="button"] svg,
-[class*="actionButton"] svg,
-[class*="toolbar"] svg {
+[class*="controlButton"] svg,
+[class*="callContainer"] button svg,
+[class*="topSection"] button svg {
 	display: block !important;
 	margin: auto !important;
+	position: relative !important;
+	top: 0 !important;
+	transform: none !important;
 }
