@@ -107,21 +107,15 @@
 	background-color: hsla(var(--textarea-color), var(--textarea-alpha-focus)) !important;
 }
 
-/* CALL BUTTONS - Icons zentrieren */
-[class*="controlButton"],
-[class*="callContainer"] button,
-[class*="topSection"] button {
+/* ACTION BUTTONS unten links - Icons zentrieren */
+[class*="buttonAction"] {
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
-	padding: 0 !important;
 }
 
-[class*="controlButton"] svg,
-[class*="callContainer"] button svg,
-[class*="topSection"] button svg {
+[class*="buttonAction"] svg {
 	display: block !important;
-	margin: auto !important;
 	position: relative !important;
 	top: 0 !important;
 	transform: none !important;
